@@ -1,0 +1,273 @@
+(function () {
+  function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+  function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["loksabha-loksabha-module"], {
+    /***/
+    "L1cv":
+    /*!***********************************************************************************!*\
+      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/loksabha/loksabha.page.html ***!
+      \***********************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function L1cv(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar>\n    <ion-title>Loksabha</ion-title>\n  </ion-toolbar>\n  <style>\n* {\n  box-sizing: border-box;\n}\n\n.column {\n  float: left;\n  width: 33%;\n  padding: 20px;\n}\n.c {\n  float: left;\n  width: 25%;\n  padding: 20px;\n}\n\n/* Clearfix (clear floats) */\n.row::after {\n  content: \"\";\n  clear: both;\n  display: table;\n}\nh2 {\n  text-align: center;\n}  </style>\n</ion-header>\n\n<ion-content >\n\n  <b style=\"color:blue\" > <h2>Loksabha </h2></b>\n\n  <div class=\"row\">\n    <div class=\"c\">\n    <h2 routerLink=\"/pm\" >Leader of house</h2>\n      <img routerLink=\"/pm\" src=\"assets/pm.jpg\" alt=\"Snow\" style=\"width:100%\">\n      <h2 routerLink=\"/pm\" >Narendra Modi </h2>\n    </div>\n    <div class=\"c\">\n    <h2 routerLink=\"/loksabhaspeaker\" >Speaker</h2>\n      <img routerLink=\"/loksabhaspeaker\" src=\"assets/speaker.jpg\" alt=\"Snow\" style=\"width:100%\">\n      <h2 routerLink=\"/loksabhaspeaker\">OM Birla </h2>\n    </div>\n          <div class=\"c\">\n            <h2 routerLink=\"/loksabhadeputyspeaker\">Deputy Speaker</h2>\n      <img routerLink=\"/loksabhadeputyspeaker\" src=\"assets/dp.jpg\"  style=\"width:70%\">\n      <h2 routerLink=\"/loksabhadeputyspeaker\">M Thambi Durai   </h2>\n    </div>\n    <div class=\"c\">\n      <h2>Opposition Leader</h2>\n<img src=\"assets/vacant.jpg\" style=\"width:90%;\">\n<h2>Vacant </h2>\n</div>\n  </div>\n      <app-state2></app-state2>\n  <!--\n    <ion-list *ngFor=\"let i of k1\">\n    <ion-item >\n<ion-label style=\"color:green\"><ion-button shape=\"round\" size=\"default\" expand=\"block\" fill=\"outline\" (click)=\"btnClicked('lok1',i.State_name)\">{{i.State_name}}-{{i.Loksabha_Candidates.length}}</ion-button></ion-label>\n    </ion-item>\n\n  </ion-list> -->\n\n  </ion-content >\n";
+      /***/
+    },
+
+    /***/
+    "U5JQ":
+    /*!*****************************************************!*\
+      !*** ./src/app/loksabha/loksabha-routing.module.ts ***!
+      \*****************************************************/
+
+    /*! exports provided: LoksabhaPageRoutingModule */
+
+    /***/
+    function U5JQ(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "LoksabhaPageRoutingModule", function () {
+        return LoksabhaPageRoutingModule;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+      /* harmony import */
+
+
+      var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/router */
+      "tyNb");
+      /* harmony import */
+
+
+      var _loksabha_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./loksabha.page */
+      "oYfw");
+
+      var routes = [{
+        path: '',
+        component: _loksabha_page__WEBPACK_IMPORTED_MODULE_3__["LoksabhaPage"]
+      }];
+
+      var LoksabhaPageRoutingModule = function LoksabhaPageRoutingModule() {
+        _classCallCheck(this, LoksabhaPageRoutingModule);
+      };
+
+      LoksabhaPageRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+      })], LoksabhaPageRoutingModule);
+      /***/
+    },
+
+    /***/
+    "oYfw":
+    /*!*******************************************!*\
+      !*** ./src/app/loksabha/loksabha.page.ts ***!
+      \*******************************************/
+
+    /*! exports provided: LoksabhaPage */
+
+    /***/
+    function oYfw(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "LoksabhaPage", function () {
+        return LoksabhaPage;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _raw_loader_loksabha_page_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! raw-loader!./loksabha.page.html */
+      "L1cv");
+      /* harmony import */
+
+
+      var _loksabha_page_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ./loksabha.page.scss */
+      "tgcW");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+      /* harmony import */
+
+
+      var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! @angular/router */
+      "tyNb");
+
+      var LoksabhaPage = /*#__PURE__*/function () {
+        function LoksabhaPage(router) {
+          _classCallCheck(this, LoksabhaPage);
+
+          this.router = router;
+        }
+
+        _createClass(LoksabhaPage, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {}
+        }, {
+          key: "btnClicked",
+          value: function btnClicked(k3, k4) {
+            this.router.navigate([k3, k4]);
+          }
+        }]);
+
+        return LoksabhaPage;
+      }();
+
+      LoksabhaPage.ctorParameters = function () {
+        return [{
+          type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+        }];
+      };
+
+      LoksabhaPage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-loksabha',
+        template: _raw_loader_loksabha_page_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+        styles: [_loksabha_page_scss__WEBPACK_IMPORTED_MODULE_2__["default"]]
+      })], LoksabhaPage);
+      /***/
+    },
+
+    /***/
+    "tgcW":
+    /*!*********************************************!*\
+      !*** ./src/app/loksabha/loksabha.page.scss ***!
+      \*********************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function tgcW(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = ".box {\n  margin: 0px 39px;\n}\n\nh2 {\n  text-shadow: 0px 3px 6px cyan;\n  font-weight: bold;\n  font-style: italic;\n}\n\n.list1 {\n  display: flex;\n}\n\n.list2 {\n  margin-right: 45px;\n}\n\n/* media querry */\n\n@media only screen and (min-width: 414px) and (max-width: 736px) {\n  .container {\n    width: 200%;\n    font-size: 15px;\n    position: relative;\n    right: 90px;\n  }\n\n  .list1 {\n    display: block;\n    padding: 10px;\n  }\n\n  h6 {\n    font-size: 15px;\n  }\n}\n\n/* Map */\n\n.indian_map {\n  margin-left: 7rem;\n}\n\n/* J and k */\n\n#jandk {\n  position: relative;\n  right: 28.5rem;\n  bottom: 8rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n.tooltipcm {\n  visibility: hidden;\n  width: 120px;\n  background-color: black;\n  color: #fff;\n  text-align: center;\n  border-radius: 6px;\n  padding: 5px 0;\n  /* Position the tooltip */\n  position: absolute;\n  z-index: 1;\n}\n\n#jandk:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Himachal */\n\n#himachal {\n  position: relative;\n  left: 14rem;\n  bottom: 20.9rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#himachal:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Uttarakhand */\n\n#Uttarakhand {\n  position: relative;\n  left: 8.5rem;\n  bottom: 18.5rem;\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Uttarakhand:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* UttarPradesh */\n\n#UttarPradesh {\n  position: relative;\n  left: 7.5rem;\n  bottom: 16rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#UttarPradesh:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Bihar */\n\n#Bihar {\n  position: relative;\n  left: 9rem;\n  bottom: 15.5rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Bihar:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Sikkim */\n\n#Sikkim {\n  position: relative;\n  left: 12.7rem;\n  bottom: 16.5rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Sikkim:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Arunachal */\n\n#Arunachal {\n  position: relative;\n  left: 15.9rem;\n  bottom: 16.9rem;\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Arunachal:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Kerla */\n\n#Kerla {\n  position: relative;\n  right: 8.5rem;\n  bottom: 4rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Kerla:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Karnatak */\n\n#Karnataka {\n  position: relative;\n  right: 9.9rem;\n  bottom: 6rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Karnataka:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Tamilnadu */\n\n#Tamilnadu {\n  position: relative;\n  right: 9.7rem;\n  bottom: 6rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Tamilnadu:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Goa */\n\n#Goa {\n  position: relative;\n  right: 18rem;\n  bottom: 7rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Goa:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Maharastra */\n\n#Maharastra {\n  position: relative;\n  right: 21.4rem;\n  bottom: 10.7rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Maharastra:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Telengana */\n\n#Telengana {\n  position: relative;\n  right: 19.9rem;\n  bottom: 10rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Telengana:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Odisha */\n\n#Odisha {\n  position: relative;\n  right: 13.9rem;\n  bottom: 12rem;\n  font-size: 10px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Odisha:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* WestBengal */\n\n#WestBengal {\n  position: relative;\n  right: 14.1rem;\n  bottom: 13.5rem;\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#WestBengal:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Jharkhand */\n\n#Jharkhand {\n  position: relative;\n  left: 16rem;\n  bottom: 14.9rem;\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Jharkhand:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Chhattisgarh */\n\n#Chhattisgarh {\n  position: relative;\n  left: 10rem;\n  bottom: 14rem;\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n  color: white;\n}\n\n#Chhattisgarh:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* MadhyaPradesh */\n\n#MadhyaPradesh {\n  position: relative;\n  left: 1rem;\n  bottom: 14.9rem;\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#MadhyaPradesh:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Gujurat */\n\n#Gujurat {\n  position: relative;\n  right: 9rem;\n  bottom: 14.9rem;\n  font-size: 12px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Gujurat:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Rajasthan */\n\n#Rajasthan {\n  position: relative;\n  right: 9.9rem;\n  bottom: 17.9rem;\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Rajasthan:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Punjab */\n\n#Punjab {\n  position: relative;\n  right: 9.5rem;\n  bottom: 20.9rem;\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n}\n\n#Punjab:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Delhi */\n\n#Delhi {\n  position: relative;\n  right: 8.9rem;\n  bottom: 18rem;\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n  color: white;\n}\n\n#Delhi:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Assam */\n\n#Assam {\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n  position: relative;\n  left: 6rem;\n  bottom: 17rem;\n}\n\n#Assam:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Meghalay */\n\n#Meghalay {\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n  position: relative;\n  left: 6rem;\n  bottom: 16.4rem;\n}\n\n#Meghalay:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Nagaland */\n\n#Nagaland {\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n  position: relative;\n  left: 6.2rem;\n  bottom: 16.9rem;\n}\n\n#Nagaland:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Manipur */\n\n#Manipur {\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n  position: relative;\n  left: 3.7rem;\n  bottom: 15.9rem;\n}\n\n#Manipur:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Mizoram */\n\n#Mizoram {\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n  position: relative;\n  right: 1.3rem;\n  bottom: 14.5rem;\n}\n\n#Mizoram:hover .tooltipcm {\n  visibility: visible;\n}\n\n/* Tripura */\n\n#Tripura {\n  font-size: 9px;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n  font-weight: bold;\n  position: relative;\n  right: 6.5rem;\n  bottom: 15.5rem;\n}\n\n#Tripura:hover .tooltipcm {\n  visibility: visible;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2xva3NhYmhhLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJLGdCQUFBO0FBQUo7O0FBRUE7RUFDSSw2QkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUFDSjs7QUFHQTtFQUNJLGFBQUE7QUFBSjs7QUFHQTtFQUNJLGtCQUFBO0FBQUo7O0FBS0EsaUJBQUE7O0FBQ0E7RUFDSTtJQUNJLFdBQUE7SUFDQSxlQUFBO0lBQ0Esa0JBQUE7SUFDQSxXQUFBO0VBRk47O0VBSUU7SUFDSSxjQUFBO0lBQ0EsYUFBQTtFQUROOztFQUdFO0lBQ0ksZUFBQTtFQUFOO0FBQ0Y7O0FBS0EsUUFBQTs7QUFDQTtFQUNJLGlCQUFBO0FBSEo7O0FBTUEsWUFBQTs7QUFDQTtFQUNJLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0VBQ0EscUJBQUE7RUFDQSwrQkFBQTtFQUNBLGlCQUFBO0FBSEo7O0FBTUU7RUFDRSxrQkFBQTtFQUNBLFlBQUE7RUFDQSx1QkFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxVQUFBO0FBSEo7O0FBS0U7RUFDRSxtQkFBQTtBQUZKOztBQUtHLGFBQUE7O0FBQ0E7RUFDQyxrQkFBQTtFQUNBLFdBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtFQUNBLHFCQUFBO0VBQ0EsK0JBQUE7RUFDQSxpQkFBQTtBQUZKOztBQU1FO0VBQ0UsbUJBQUE7QUFISjs7QUFNRSxnQkFBQTs7QUFDQTtFQUNFLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0EscUJBQUE7RUFDQSwrQkFBQTtFQUNBLGlCQUFBO0FBSEo7O0FBT0U7RUFDRSxtQkFBQTtBQUpKOztBQU9FLGlCQUFBOztBQUNBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSxxQkFBQTtFQUNBLCtCQUFBO0VB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RTtFQUNFLG1CQUFBO0FBRko7O0FBS0UsY0FBQTs7QUFDQTtFQUNFLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0EscUJBQUE7RUFDQSwrQkFBQTtFQUNBLGlCQUFBO0FBRko7O0FBSUU7RUFDRSxtQkFBQTtBQURKOztBQUlFLFdBQUE7O0FBQ0E7RUFDRSxrQkFBQTtFQUNBLGFBQUE7RUFDQSxlQUFBO0VBQ0EsY0FBQTtFQUNBLHFCQUFBO0VBQ0EsK0JBQUE7RUFDQSxpQkFBQTtBQURKOztBQUdFO0VBQ0UsbUJBQUE7QUFBSjs7QUFHRSxVQUFBOztBQUNBO0VBQ0Usa0JBQUE7RUFDQSxhQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7RUFDQSxxQkFBQTtFQUNBLCtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0FBQUo7O0FBRUU7RUFDRSxtQkFBQTtBQUNKOztBQUVFLFVBQUE7O0FBQ0E7RUFDRSxjQUFBO0VBQ0EscUJBQUE7RUFDQSwrQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxVQUFBO0VBQ0EsYUFBQTtBQUNKOztBQUVFO0VBQ0UsbUJBQUE7QUFDSjs7QUFFRSxhQUFBOztBQUNBO0VBQ0UsY0FBQTtFQUNBLHFCQUFBO0VBQ0EsK0JBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLGVBQUE7QUFDSjs7QUFFRTtFQUNFLG1CQUFBO0FBQ0o7O0FBR0EsYUFBQTs7QUFDQTtFQUNJLGNBQUE7RUFDQSxxQkFBQTtFQUNBLCtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FBQUo7O0FBR0U7RUFDRSxtQkFBQTtBQUFKOztBQUdFLFlBQUE7O0FBQ0E7RUFDRSxjQUFBO0VBQ0EscUJBQUE7RUFDQSwrQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtBQUFKOztBQUdFO0VBQ0UsbUJBQUE7QUFBSjs7QUFFRSxZQUFBOztBQUNBO0VBQ0UsY0FBQTtFQUNBLHFCQUFBO0VBQ0EsK0JBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7QUFDSjs7QUFFRTtFQUNFLG1CQUFBO0FBQ0o7O0FBQ0EsWUFBQTs7QUFDQTtFQUNJLGNBQUE7RUFDQSxxQkFBQTtFQUNBLCtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUNELGFBQUE7RUFDQyxlQUFBO0FBRUo7O0FBQ0U7RUFDRSxtQkFBQTtBQUVKIiwiZmlsZSI6Imxva3NhYmhhLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLmJveHtcbiAgICBtYXJnaW46IDBweCAzOXB4O1xufVxuaDJ7XG4gICAgdGV4dC1zaGFkb3c6IDBweCAzcHggNnB4IGN5YW47XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xuXG59XG5cbi5saXN0MXtcbiAgICBkaXNwbGF5OmZsZXg7XG5cbn1cbi5saXN0MntcbiAgICBtYXJnaW4tcmlnaHQ6IDQ1cHg7XG5cbn1cblxuXG4vKiBtZWRpYSBxdWVycnkgKi9cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDo0MTRweCkgYW5kIChtYXgtd2lkdGg6NzM2cHgpe1xuICAgIC5jb250YWluZXJ7XG4gICAgICAgIHdpZHRoOiAyMDAlO1xuICAgICAgICBmb250LXNpemU6IDE1cHg7XG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgICAgcmlnaHQ6IDkwcHg7XG4gICAgfVxuICAgIC5saXN0MXtcbiAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgfVxuICAgIGg2e1xuICAgICAgICBmb250LXNpemU6IDE1cHg7XG4gICAgfVxufVxuXG5cblxuLyogTWFwICovXG4uaW5kaWFuX21hcHtcbiAgICBtYXJnaW4tbGVmdDogN3JlbTtcbn1cblxuLyogSiBhbmQgayAqL1xuI2phbmRrIHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgcmlnaHQ6IDI4LjVyZW07XG4gICAgYm90dG9tOiA4cmVtO1xuICAgIGZvbnQtc2l6ZTogMTBweDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IGRvdHRlZCBibGFjaztcbiAgICBmb250LXdlaWdodDogYm9sZDtcblxuICB9XG4gIC50b29sdGlwY20ge1xuICAgIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICB3aWR0aDogMTIwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG4gICAgY29sb3I6ICNmZmY7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBwYWRkaW5nOiA1cHggMDtcbiAgICAvKiBQb3NpdGlvbiB0aGUgdG9vbHRpcCAqL1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB6LWluZGV4OiAxO1xuICB9XG4gICNqYW5kazpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgIC8qIEhpbWFjaGFsICovXG4gICAjaGltYWNoYWwge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBsZWZ0OiAxNHJlbTtcbiAgICBib3R0b206IDIwLjlyZW07XG4gICAgZm9udC1zaXplOiAxMHB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkIGJsYWNrO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuXG4gIH1cblxuICAjaGltYWNoYWw6aG92ZXIgLnRvb2x0aXBjbSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuXG4gIC8qIFV0dGFyYWtoYW5kICovXG4gICNVdHRhcmFraGFuZCB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGxlZnQ6IDguNXJlbTtcbiAgICBib3R0b206IDE4LjVyZW07XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG5cbiAgfVxuXG4gICNVdHRhcmFraGFuZDpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogVXR0YXJQcmFkZXNoICovXG4gICNVdHRhclByYWRlc2gge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBsZWZ0OiA3LjVyZW07XG4gICAgYm90dG9tOiAxNnJlbTtcbiAgICBmb250LXNpemU6IDEwcHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG5cbiAgfVxuXG4gICNVdHRhclByYWRlc2g6aG92ZXIgLnRvb2x0aXBjbSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuXG4gIC8qIEJpaGFyICovXG4gICNCaWhhciB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGxlZnQ6OXJlbTtcbiAgICBib3R0b206IDE1LjVyZW07XG4gICAgZm9udC1zaXplOiAxMHB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkIGJsYWNrO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICB9XG5cbiAgI0JpaGFyOmhvdmVyIC50b29sdGlwY20ge1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cblxuICAvKiBTaWtraW0gKi9cbiAgI1Npa2tpbSB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgbGVmdDogMTIuN3JlbTtcbiAgICBib3R0b206IDE2LjVyZW07XG4gICAgZm9udC1zaXplOiAxMHB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkIGJsYWNrO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICB9XG5cbiAgI1Npa2tpbTpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbi8qIEFydW5hY2hhbCAqL1xuI0FydW5hY2hhbCB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGxlZnQ6IDE1LjlyZW07XG4gICAgYm90dG9tOiAxNi45cmVtO1xuICAgIGZvbnQtc2l6ZTogOXB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkIGJsYWNrO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICB9XG5cbiAgI0FydW5hY2hhbDpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbi8qIEtlcmxhICovXG4gICNLZXJsYSB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHJpZ2h0OiA4LjVyZW07XG4gICAgYm90dG9tOiA0cmVtO1xuICAgIGZvbnQtc2l6ZTogMTBweDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IGRvdHRlZCBibGFjaztcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgfVxuXG4gICNLZXJsYTpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogS2FybmF0YWsgKi9cbiAgI0thcm5hdGFrYXtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgcmlnaHQ6IDkuOXJlbTtcbiAgICBib3R0b206IDZyZW07XG4gICAgZm9udC1zaXplOiAxMHB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkIGJsYWNrO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICB9XG4gICNLYXJuYXRha2E6aG92ZXIgLnRvb2x0aXBjbSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuXG4gIC8qIFRhbWlsbmFkdSAqL1xuICAjVGFtaWxuYWR1e1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICByaWdodDogOS43cmVtO1xuICAgIGJvdHRvbTogNnJlbTtcbiAgICBmb250LXNpemU6IDEwcHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG5cbiAgfVxuICAjVGFtaWxuYWR1OmhvdmVyIC50b29sdGlwY20ge1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cblxuICAvKiBHb2EgKi9cbiAgI0dvYXtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgcmlnaHQ6IDE4cmVtO1xuICAgIGJvdHRvbTogN3JlbTtcbiAgICBmb250LXNpemU6IDEwcHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG5cbiAgfVxuICAjR29hOmhvdmVyIC50b29sdGlwY20ge1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cbi8qIE1haGFyYXN0cmEgKi9cbiAgI01haGFyYXN0cmF7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHJpZ2h0OiAyMS40cmVtO1xuICAgIGJvdHRvbTogMTAuN3JlbTtcbiAgICBmb250LXNpemU6IDEwcHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG5cbiAgfVxuICAjTWFoYXJhc3RyYTpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogVGVsZW5nYW5hICovXG4gICNUZWxlbmdhbmF7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHJpZ2h0OiAxOS45cmVtO1xuICAgIGJvdHRvbTogMTByZW07XG4gICAgZm9udC1zaXplOiAxMHB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkIGJsYWNrO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuXG4gIH1cbiAgI1RlbGVuZ2FuYTpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogT2Rpc2hhICovXG4gICNPZGlzaGF7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHJpZ2h0OiAxMy45cmVtO1xuICAgIGJvdHRvbTogMTJyZW07XG4gICAgZm9udC1zaXplOiAxMHB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkIGJsYWNrO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuXG4gIH1cbiAgI09kaXNoYTpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogV2VzdEJlbmdhbCAqL1xuICAjV2VzdEJlbmdhbHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgcmlnaHQ6IDE0LjFyZW07XG4gICAgYm90dG9tOiAxMy41cmVtO1xuICAgIGZvbnQtc2l6ZTogOXB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkIGJsYWNrO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuXG4gIH1cbiAgI1dlc3RCZW5nYWw6aG92ZXIgLnRvb2x0aXBjbSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuLyogSmhhcmtoYW5kICovXG4jSmhhcmtoYW5ke1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgIGxlZnQ6IDE2cmVtO1xuICAgIGJvdHRvbTogMTQuOXJlbTtcbiAgICBmb250LXNpemU6IDlweDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IGRvdHRlZCBibGFjaztcbiAgICBmb250LXdlaWdodDogYm9sZDtcblxuICB9XG4gICNKaGFya2hhbmQ6aG92ZXIgLnRvb2x0aXBjbSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuXG4gIC8qIENoaGF0dGlzZ2FyaCAqL1xuICAjQ2hoYXR0aXNnYXJoe1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgIGxlZnQ6IDEwcmVtO1xuICAgIGJvdHRvbTogMTRyZW07XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgY29sb3I6IHdoaXRlO1xuXG4gIH1cbiAgI0NoaGF0dGlzZ2FyaDpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogTWFkaHlhUHJhZGVzaCAqL1xuICAjTWFkaHlhUHJhZGVzaHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgbGVmdDogMXJlbTtcbiAgICBib3R0b206IDE0LjlyZW07XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG5cbiAgfVxuICAjTWFkaHlhUHJhZGVzaDpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogR3VqdXJhdCAqL1xuICAjR3VqdXJhdHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgcmlnaHQ6IDlyZW07XG4gICAgYm90dG9tOiAxNC45cmVtO1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IGRvdHRlZCBibGFjaztcbiAgICBmb250LXdlaWdodDogYm9sZDtcblxuICB9XG4gICNHdWp1cmF0OmhvdmVyIC50b29sdGlwY20ge1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cblxuICAvKiBSYWphc3RoYW4gKi9cbiAgI1JhamFzdGhhbntcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgcmlnaHQ6IDkuOXJlbTtcbiAgICBib3R0b206IDE3LjlyZW07XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIH1cbiAgI1JhamFzdGhhbjpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogUHVuamFiICovXG4gICNQdW5qYWJ7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHJpZ2h0OjkuNXJlbTtcbiAgICBib3R0b206IDIwLjlyZW07XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIH1cbiAgI1B1bmphYjpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogRGVsaGkgKi9cbiAgI0RlbGhpe1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICByaWdodDogOC45cmVtO1xuICAgIGJvdHRvbTogMThyZW07XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgY29sb3I6IHdoaXRlO1xuICB9XG4gICNEZWxoaTpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLyogQXNzYW0gKi9cbiAgI0Fzc2Fte1xuICAgIGZvbnQtc2l6ZTogOXB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkIGJsYWNrO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBsZWZ0OiA2cmVtO1xuICAgIGJvdHRvbTogMTdyZW07XG5cbiAgfVxuICAjQXNzYW06aG92ZXIgLnRvb2x0aXBjbSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuXG4gIC8qIE1lZ2hhbGF5ICovXG4gICNNZWdoYWxheXtcbiAgICBmb250LXNpemU6IDlweDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IGRvdHRlZCBibGFjaztcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgbGVmdDogNnJlbTtcbiAgICBib3R0b206IDE2LjRyZW07XG5cbiAgfVxuICAjTWVnaGFsYXk6aG92ZXIgLnRvb2x0aXBjbSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuXG5cbi8qIE5hZ2FsYW5kICovXG4jTmFnYWxhbmR7XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGxlZnQ6IDYuMnJlbTtcbiAgICBib3R0b206IDE2LjlyZW07XG5cbiAgfVxuICAjTmFnYWxhbmQ6aG92ZXIgLnRvb2x0aXBjbSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuXG4gIC8qIE1hbmlwdXIgKi9cbiAgI01hbmlwdXJ7XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGxlZnQ6IDMuN3JlbTtcbiAgICBib3R0b206IDE1LjlyZW07XG5cbiAgfVxuICAjTWFuaXB1cjpob3ZlciAudG9vbHRpcGNtIHtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG4gIC8qIE1pem9yYW0gKi9cbiAgI01pem9yYW17XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHJpZ2h0OiAxLjNyZW07XG4gICAgYm90dG9tOiAxNC41cmVtO1xuXG4gIH1cbiAgI01pem9yYW06aG92ZXIgLnRvb2x0aXBjbSB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuLyogVHJpcHVyYSAqL1xuI1RyaXB1cmF7XG4gICAgZm9udC1zaXplOiA5cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgcmlnaHQ6Ni41cmVtO1xuICAgIGJvdHRvbTogMTUuNXJlbTtcblxuICB9XG4gICNUcmlwdXJhOmhvdmVyIC50b29sdGlwY20ge1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cbiJdfQ== */";
+      /***/
+    },
+
+    /***/
+    "uBI/":
+    /*!*********************************************!*\
+      !*** ./src/app/loksabha/loksabha.module.ts ***!
+      \*********************************************/
+
+    /*! exports provided: LoksabhaPageModule */
+
+    /***/
+    function uBI(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "LoksabhaPageModule", function () {
+        return LoksabhaPageModule;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+      /* harmony import */
+
+
+      var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/common */
+      "ofXK");
+      /* harmony import */
+
+
+      var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! @angular/forms */
+      "3Pt+");
+      /* harmony import */
+
+
+      var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! @ionic/angular */
+      "TEn/");
+      /* harmony import */
+
+
+      var _loksabha_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! ./loksabha-routing.module */
+      "U5JQ");
+      /* harmony import */
+
+
+      var _loksabha_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      /*! ./loksabha.page */
+      "oYfw");
+      /* harmony import */
+
+
+      var _lok_state2_state2_page__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      /*! ../lok/state2/state2.page */
+      "hR6F");
+
+      var LoksabhaPageModule = function LoksabhaPageModule() {
+        _classCallCheck(this, LoksabhaPageModule);
+      };
+
+      LoksabhaPageModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"], _loksabha_routing_module__WEBPACK_IMPORTED_MODULE_5__["LoksabhaPageRoutingModule"]],
+        declarations: [_loksabha_page__WEBPACK_IMPORTED_MODULE_6__["LoksabhaPage"], _lok_state2_state2_page__WEBPACK_IMPORTED_MODULE_7__["State2Page"]]
+      })], LoksabhaPageModule);
+      /***/
+    }
+  }]);
+})();
+//# sourceMappingURL=loksabha-loksabha-module-es5.js.map
